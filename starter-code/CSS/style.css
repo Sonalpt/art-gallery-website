@@ -44,7 +44,6 @@ header {
 header .header__blackmargin {
   width: 450px;
   background-color: #151515;
-  text-overflow: initial;
 }
 
 header .header__blackmargin h1 {
@@ -59,7 +58,6 @@ header .header__blackmargin h1 {
   position: relative;
   left: 200px;
   top: 50px;
-  text-overflow: hidden;
 }
 
 header .header__content {
@@ -84,7 +82,7 @@ header .header__content p {
   max-width: 350px;
 }
 
-header .header__content a {
+header .header__content .ourlocationButton {
   text-decoration: none;
   color: inherit;
   display: -webkit-box;
@@ -93,31 +91,40 @@ header .header__content a {
   position: relative;
   top: 250px;
   left: 90.6%;
+  max-width: 231.5px;
 }
 
-header .header__content a .ourlocation {
+header .header__content .ourlocationButton__text {
   color: #FFFFFF;
   background-color: #151515;
-  border: none;
   font-family: 'BigShouldersDisplay-Black', sans-serif;
   font-size: 20px;
-  padding: 18px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   line-height: 24px;
   letter-spacing: 3.63636px;
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
-header .header__content a .ourlocation:hover {
-  cursor: pointer;
-}
-
-header .header__content a .arrowRight {
+header .header__content .ourlocationButton__img {
   background-color: #D5966C;
-  padding: 16px 18px 16px 18px;
-  border: none;
+  padding: 20px 18px 20px 18px;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
-header .header__content a .arrowRight:hover {
-  cursor: pointer;
+header .header__content .ourlocationButton:hover .ourlocationButton__text {
+  background-color: #D5966C;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+header .header__content .ourlocationButton:hover .ourlocationButton__img {
+  background-color: #151515;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
 /*------------- CONTENT DESCRIPTION SECTION ---------------- */
@@ -281,8 +288,17 @@ header .header__content a .arrowRight:hover {
   line-height: 28px;
 }
 
-.indexFooter img {
+.indexFooter .social-index {
   margin-right: 15px;
+}
+
+.indexFooter .social-index:hover {
+  -webkit-filter: invert(50%);
+          filter: invert(50%);
+  -webkit-transition: -webkit-filter 150ms ease-out;
+  transition: -webkit-filter 150ms ease-out;
+  transition: filter 150ms ease-out;
+  transition: filter 150ms ease-out, -webkit-filter 150ms ease-out;
 }
 
 /* ---------------------- LOCATION.HTML ----------------- */
@@ -316,11 +332,29 @@ header .header__content a .arrowRight:hover {
   padding: 20px 20px 20px 20px;
   line-height: 24px;
   letter-spacing: 3.63636px;
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
 .map .backtohomeButton__img {
   background-color: #D5966C;
   padding: 20px 18px 20px 18px;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.map .backtohomeButton:hover .backtohomeButton__text {
+  background-color: #D5966C;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.map .backtohomeButton:hover .backtohomeButton__img {
+  background-color: #151515;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
 }
 
 /* --------- OUR LOCATION SECTION --------- */
@@ -402,9 +436,51 @@ header .header__content a .arrowRight:hover {
   color: #151515;
 }
 
-.locationFooter a {
+.locationFooter .social-location {
   text-decoration: none;
+  margin-right: 15px;
+}
+
+.locationFooter .social-location:hover {
   -webkit-filter: invert(100%);
           filter: invert(100%);
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+/* ---------- MEDIA QUERIES ---------------------*/
+@media (max-width: 1310px) {
+  .header__blackmargin {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 1100px) {
+  header {
+    max-height: 700px;
+  }
+  .header__blackmargin {
+    max-width: 0px;
+  }
+  .header__blackmargin h1 {
+    color: #151515;
+    margin-left: 230px;
+    margin-top: -10px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    min-width: 600px;
+  }
+  .header__content {
+    background-image: url(../assets/tablet/image-hero.jpg);
+    min-width: 50%;
+    height: 700px;
+    background-size: cover;
+  }
+  .header__content p {
+    margin-top: 150px;
+  }
+  .header__content .ourlocationButton {
+    margin-top: -100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
