@@ -1,0 +1,289 @@
+@font-face {
+  font-family: 'BigShouldersDisplay-Black';
+  src: url(../policies/Big_Shoulders_Display/static/BigShouldersDisplay-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Outfit-Light';
+  src: url(../policies/Outfit/static/Outfit-Light.ttf);
+}
+
+/*-------------- BASIC SETTINGS ----------------- */
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  font-family: 'Outfit-Light', sans-serif;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'BigShouldersDisplay-Black', sans-serif;
+}
+
+h1, h3 {
+  color: #FFFFFF;
+}
+
+p {
+  color: #444444;
+}
+
+/* ----------------- HEADER ----------------- */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 800px;
+  margin-bottom: 180px;
+}
+
+header .header__blackmargin {
+  width: 450px;
+  background-color: #151515;
+  text-overflow: initial;
+}
+
+header .header__blackmargin h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 96px;
+  position: relative;
+  left: 200px;
+  top: 50px;
+  text-overflow: hidden;
+}
+
+header .header__content {
+  height: 100%;
+  width: 540px;
+  background-image: url(../assets/desktop/image-hero@2x.jpg);
+  background-size: 540px 800px;
+  background-repeat: no-repeat;
+}
+
+header .header__content p {
+  position: relative;
+  height: 160px;
+  left: 90.5%;
+  right: 0%;
+  top: calc(50% - 160px/2 - 130px);
+  font-family: 'Outfit-Light', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+  max-width: 350px;
+}
+
+header .header__content a {
+  text-decoration: none;
+  color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 250px;
+  left: 90.6%;
+}
+
+header .header__content a .ourlocation {
+  color: #FFFFFF;
+  background-color: #151515;
+  border: none;
+  font-family: 'BigShouldersDisplay-Black', sans-serif;
+  font-size: 20px;
+  padding: 18px 20px 20px 20px;
+  line-height: 24px;
+  letter-spacing: 3.63636px;
+}
+
+header .header__content a .ourlocation:hover {
+  cursor: pointer;
+}
+
+header .header__content a .arrowRight {
+  background-color: #D5966C;
+  padding: 16px 18px 16px 18px;
+  border: none;
+}
+
+header .header__content a .arrowRight:hover {
+  cursor: pointer;
+}
+
+/*------------- CONTENT DESCRIPTION SECTION ---------------- */
+.dayDescription {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 200px;
+}
+
+.dayDescription h2 {
+  font-family: 'BigShouldersDisplay-Black', sans-serif;
+  font-size: 70px;
+  color: #151515;
+  text-transform: uppercase;
+}
+
+.dayDescription p {
+  font-family: 'Outfit-Light', sans-serif;
+  font-size: 22px;
+  color: #444444;
+}
+
+/* YOUR DAY PART */
+.dayDescription__yourDay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.dayDescription__yourDay .dayDescription__yourDay__text {
+  width: 350px;
+  height: 280px;
+  margin-right: 125px;
+  padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: justify;
+  -webkit-box-align: justify;
+      -ms-flex-align: justify;
+          align-items: justify;
+}
+
+.dayDescription__yourDay .dayDescription__yourDay__text h2 {
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+.dayDescription__yourDay .dayDescription__yourDay__text p {
+  max-width: 350px;
+}
+
+.dayDescription__yourDay .dayDescription__yourDay__photo-1 {
+  width: 635px;
+  height: 400px;
+  background-image: url(../assets/desktop/image-grid-1@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* "COME AND BE INSPIRED" PART */
+.dayDescription__beInspired {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dayDescription__beInspired .photo-2 {
+  width: 685px;
+  height: 720px;
+  background-image: url(../assets/desktop/image-grid-2@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dayDescription__beInspired .dayDescription__beInspired__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 30px;
+}
+
+.dayDescription__beInspired .dayDescription__beInspired__column .photo-3 {
+  width: 445px;
+  height: 313px;
+  background-image: url(../assets/desktop/image-grid-3@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 0.5px;
+}
+
+.dayDescription__beInspired .dayDescription__beInspired__column .dayDescription__beInspired__column__text {
+  margin-top: 20px;
+  background-color: #151515;
+  padding-left: 50px;
+  padding-bottom: 47.5px;
+}
+
+.dayDescription__beInspired .dayDescription__beInspired__column .dayDescription__beInspired__column__text h2 {
+  color: #FFFFFF;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.dayDescription__beInspired .dayDescription__beInspired__column .dayDescription__beInspired__column__text p {
+  max-width: 350px;
+  color: #FFFFFF;
+  margin-top: -3px;
+}
+
+/* ----------------- FOOTER -------------- */
+footer {
+  background-color: #151515;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer h3 {
+  font-family: 'BigShouldersDisplay-Black', sans-serif;
+  font-size: 36px;
+  max-width: 170px;
+  text-transform: uppercase;
+}
+
+footer p {
+  font-family: 'Outfit-Light', sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+  max-width: 430px;
+  line-height: 28px;
+}
+
+footer img {
+  margin-right: 15px;
+}
+
+/* ---------------------- LOCATION.HTML ----------------- */
+/*# sourceMappingURL=style.css.map */
