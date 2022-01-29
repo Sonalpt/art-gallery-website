@@ -12,11 +12,13 @@
 body {
   min-height: 100vh;
   margin: 0;
+  max-width: 100%;
 }
 
 main {
   font-family: 'Outfit-Light', sans-serif;
-  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 h1, h2, h3 {
@@ -456,6 +458,7 @@ header .header__content .ourlocationButton:hover .ourlocationButton__img {
 }
 
 @media (max-width: 1100px) {
+  /* ---------------- HEADER ------------- */
   header {
     max-height: 700px;
   }
@@ -481,6 +484,86 @@ header .header__content .ourlocationButton:hover .ourlocationButton__img {
   }
   .header__content .ourlocationButton {
     margin-top: -100px;
+  }
+  /* -------------- CONTENT DESCRIPTION SECTION -------- */
+  .dayDescription {
+    max-width: 100%;
+    min-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .dayDescription__yourDay {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 100%;
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .dayDescription__yourDay .dayDescription__yourDay__text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: justify;
+        -ms-flex-align: justify;
+            align-items: justify;
+    width: 40%;
+    margin-right: 0px;
+    padding-left: 0;
+  }
+  .dayDescription__yourDay .dayDescription__yourDay__text h2 {
+    max-width: 70%;
+    font-size: 50px;
+  }
+  .dayDescription__yourDay .dayDescription__yourDay__text p {
+    max-width: 80%;
+    font-size: 18px;
+  }
+  .dayDescription__yourDay .dayDescription__yourDay__photo-1 {
+    min-width: 60%;
+    max-width: 60%;
+    background-size: cover;
+  }
+  /* "COME AND GET INSPIRED" PART */
+  .dayDescription__beInspired {
+    height: 720px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .dayDescription__beInspired .photo-2 {
+    min-width: 60%;
+    max-width: 60%;
+    background-position: center;
+  }
+  .dayDescription__beInspired .dayDescription__beInspired__column {
+    width: 40%;
+    margin-left: 10px;
+  }
+  .dayDescription__beInspired .dayDescription__beInspired__column .photo-3 {
+    width: 100%;
+    min-height: 40%;
+    max-height: 40%;
+    background-size: cover;
+  }
+  .dayDescription__beInspired .dayDescription__beInspired__column__text {
+    min-height: 50.5%;
+    max-height: 50.5%;
+    padding-right: 30px;
+  }
+  .dayDescription__beInspired .dayDescription__beInspired__column__text h2 {
+    font-size: 50px;
+  }
+  .dayDescription__beInspired .dayDescription__beInspired__column__text p {
+    font-size: 18px;
+  }
+  .dayDescription__beInspired .indexFooter {
+    min-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
